@@ -2,6 +2,7 @@ package it.worldpay.vale.offermanagertest.model.product;
 
 import java.io.Serializable;
 import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,6 +12,7 @@ import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
@@ -22,6 +24,8 @@ import it.worldpay.vale.offermanagertest.model.offer.Offer;
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Product implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@NotNull
 	@Column(unique = true, name = "PRODUCT_ID")

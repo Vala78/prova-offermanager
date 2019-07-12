@@ -6,10 +6,12 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.PrimaryKeyJoinColumn;
 
+import it.worldpay.vale.offermanagertest.model.product.Product;
+
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 @PrimaryKeyJoinColumn(name = "bookId")
-public class Book {
+public class Book extends Product {
 	
 	public Book(){
 		super();

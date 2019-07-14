@@ -4,5 +4,5 @@ public class CostantsUtils {
 	/*
 	 * test
 	 */
-
+	public static final String VAT = "";
 }

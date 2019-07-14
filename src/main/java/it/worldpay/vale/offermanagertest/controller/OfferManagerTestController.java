@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import it.worldpay.vale.offermanagertest.model.offer.Offer;
 import it.worldpay.vale.offermanagertest.model.product.Product;
 import it.worldpay.vale.offermanagertest.model.product.book.Book;
+import it.worldpay.vale.offermanagertest.model.product.foods.Food;
 import it.worldpay.vale.offermanagertest.service.BaseServiceDefault;
 import it.worldpay.vale.offermanagertest.service.offer.OfferServiceDefault;
 import it.worldpay.vale.offermanagertest.service.product.book.BookService;
@@ -70,5 +71,9 @@ public class OfferManagerTestController {
 		offerServiceDefault.deleteOffer(offerId);
 		 response.setStatus(HttpStatus.OK.value());
 	}
+	
+	/*
+	 * TODO somenthing
+	 */
 
 }

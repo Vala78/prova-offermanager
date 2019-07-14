@@ -16,3 +16,8 @@ Una API backend RESTful per la per la gestione delle offerte di prodotti.
 - Maven
 - Git
 - Mockito
+
+## Requirements
+
+- product are grouped in different categories (books, bikes, food) 
+- ATTENTION: for now only book categories have been created

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan({ "it.worldpay.vale" })
+@ComponentScan(basePackages = { "it.worldpay.vale" })
 public class OffersManagerTestMain implements CommandLineRunner {
 
 	public static void main(String[] args) {
